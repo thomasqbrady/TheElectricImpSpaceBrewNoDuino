@@ -34,7 +34,9 @@ I used:
 
 * $6: [some jumpers](http://www.amazon.com/gp/product/B0040DEI9M/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0040DEI9M&linkCode=as2&tag=tum0a8-20)
 
-All told, this is about $70.
+All told, this is about $70. Here's what it looked like (used a USB hub to power the Imp and Arduino):
+
+![Photo of finished project all wired up and in project box](http://static.squarespace.com/static/5007621584aef6ab9ccf8cd0/t/52f94de8e4b01b0785c4bef1/1392070129436/IMG_2473.jpg?format=750w)
 
 ## Software Dependencies
 
