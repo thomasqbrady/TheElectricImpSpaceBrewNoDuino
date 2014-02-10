@@ -1,0 +1,21 @@
+// electric imp device code
+server.log("Device Started");
+
+arduino <- hardware.uart1289;
+
+function arduinoData() {
+    local b = arduino.read();
+    while(b != -1) {
+        if (b == 0x10) {
+            server.log("they left");
+        }
+        if (b == 0x11) {
+            server.log("I SEE SOMEONE");
+            agent.send("trigger",1);
+            //arduino.write(0x11);
+        }
+        b = arduino.read();
+    }
+}
+
+arduino.configure(9600, 8, PARITY_NONE, 1, NO_CTSRTS, arduinoData);

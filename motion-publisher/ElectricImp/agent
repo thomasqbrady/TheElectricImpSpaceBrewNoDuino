@@ -1,0 +1,31 @@
+local report = [];
+
+device.on("trigger", function(data) {
+    local now = time();
+    report.push(now);
+});
+
+http.onrequest(function(request, response) {
+    local code = null;
+    local message = null;
+
+    if (request.method == "GET") {
+        code = 200;
+        response.header("Content-Type", "application/json");
+        message = "{\"uses\":"+"[";
+        local count = report.len();
+        for (local i = 0;i<count;i++) {
+          message += "{\"timestamp\":" + report[i] + "},";
+        }
+        if (count > 0) {
+          message = message.slice(0,-1);
+        }
+        message += "]"+"}";
+        report = [];
+    } else {
+        code = 404;
+        message = "Not Found";
+    }
+
+    response.send(code, message);
+});

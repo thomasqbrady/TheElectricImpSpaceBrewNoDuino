@@ -1,0 +1,20 @@
+{
+  "author": {
+    "name": "Thomas Q Brady",
+    "email": "thomas.brady@frogdesign.com"
+  },
+  "name": "elevator-watch",
+  "description": "Elevator Usage Visualizer",
+  "version": "0.0.1",
+  "dependencies": {
+    "spacebrew": "0.0.1",
+    "mongoose": "latest",
+    "restify": "latest",
+    "request": "latest"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
