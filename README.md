@@ -1,4 +1,4 @@
-# _The Electric Impspacebrewnoduino_
+# _The Electric ImpSpacebrewNoDuino_
 
 _Description: A simple example application that demos how to use [The Electric Imp](http://electricimp.com), and Arduino, [Spacebrew](http://docs.spacebrew.cc) and Node.js to build a multi-use sensor_
 
