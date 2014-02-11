@@ -68,6 +68,7 @@ server.listen(8080, function() {
 
 var i = 0;
 setInterval(function(){
+	// YOU'LL NEED TO PUT YOUR ELECTRIC IMP URL HERE V
 	request('https://agent.electricimp.com/Z25icNMZoFDC', function (error, response, body) {
 		if (!error && response.statusCode == 200) {
 			var payload = JSON.parse(body);
